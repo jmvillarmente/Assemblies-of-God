@@ -1,0 +1,206 @@
+body {
+    background-image: none; /* remove the background image from the body */
+    margin: 0; /* remove default margin */
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+/* Style the play button overlay */
+#play-button-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+
+  #play-button {
+    background-color: antiquewhite;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    border-radius: 40%;
+    padding: 1rem 1.5rem;
+    opacity: 40%;
+    cursor: pointer;
+  }
+
+  #play-button:hover {
+    opacity: 30%;
+  }
+/* Container Header */
+header {
+    background-color: rgb(0, 0, 0, 0.5); /* light gray background with 70% opacity */
+    padding: 10px; /* add some padding to the box */
+    text-align: center; /* center the text horizontally */
+    display: flex; /* add flexbox layout to header */
+    align-items: center; /* vertically center the logo and text */
+    position: relative; /* add relative positioning to the header */
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 100px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute; /* position the nav element absolutely*/
+    right: 10px; /* position 10px from the right*/
+    top: 0; /* position at the top of the header*/
+  }
+  
+  .about-us {
+    margin: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  }
+
+  .home { /* Index.html Home button */
+    position: absolute;
+    margin: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  }
+  
+  .about-us:hover {
+    opacity: 0.8;
+  }
+/* Logo inside container header */
+  .Logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+/* Welcome text inside container header */
+  header h1 {
+    font-family: sans-serif; /* font for the header text */
+    color: #ffffff  ; /* set the text color to dark gray */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* add a subtle text shadow effect */
+    display: flex; /* add flexbox layout to h1 */
+    flex-direction: column; /* stack the spans vertically */
+    font-size: 25px;
+  }
+
+  header h1 span {
+    display: block; /* make each span a block element */
+}
+
+.dropdown {
+  position: absolute;
+  right: 10px;
+  top: 28px;
+  transform: translateY(-50%);
+}
+
+.dropbtn {
+  background-color: #333;
+  color: #ffffff;
+  font-family: sans-serif;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: auto; /* remove the right property */
+  left: 1; /* add the left property and set it to 0 */
+  transform: translateX(-70%);
+}
+
+.dropdown-content a {
+  color: #ffffff;
+  font-family: sans-serif;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: small;
+}
+
+.dropdown-content a:hover {
+  opacity: 0.8;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  opacity: 0.8;
+}
+
+.ministry-dropbtn {
+  background-color: transparent;
+  color: #ffffff;
+  font-family: sans-serif;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: medium;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+.ministry-dropbtn:hover{
+  opacity: 0.8;
+}
+
+.ministry-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: auto; /* remove the right property */
+  left: 1; /* add the left property and set it to 0 */
+  transform: translateX(-70%);
+}
+
+.ministry-dropdown-content a {
+  color: #ffffff;
+  font-family: sans-serif;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: small;
+}
+
+.ministry-dropdown-content a:hover{
+  opacity: 0.8;
+}
+
+.ministry-dropdown:hover .ministry-dropdown-content {
+  display: block;
+}

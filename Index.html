@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="Index.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    </head>
+    <body>
+        <header> 
+            <img src="AGLOGO.png" alt="Logo" class="Logo">
+            <h1>
+              <span>ASSEMBLIES</span>
+              <span>OF GOD AYALA ZC.</span>
+           </h1>
+           <div class="header-right">
+            <a href="about-us.html" class="about-us">About us</a>
+            <div class="ministry-dropdown">
+              <button class="ministry-dropbtn">Ministry<i class="fas fa-caret-down"></i></button>
+              <div class="ministry-dropdown-content">
+                  <a href="#">Music Team</a>
+                  <a href="#">Small Group</a>
+                  <a href="#">Children Ministry</a>
+                  <a href="#">Youth Ministry</a>
+                  <a href="#">Men's Ministry</a>
+                  <a href="#">Women's Ministry</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn"><i class="fas fa-bars"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">LOGIN</a>
+                    <a href="#">SIGNUP</a>
+                    <a href="#">ANNOUNCEMENTS</a>
+                </div>
+            </div>
+        </div>
+        </header>
+        <video id="bg-video" autoplay>
+            <source src="VOICES OF THE CROSS.webm" type="video/webm">
+          </video>
+          <div id="play-button-overlay">
+            <i id="play-button" class="fas fa-play"></i>
+          </div>
+          <script>
+            const video = document.getElementById('bg-video');
+            const playButton = document.getElementById('play-button');
+  
+            playButton.addEventListener('click', () => {
+              video.play();
+              video.volume = 1; // Set the volume to 1 if you want sound
+              playButton.style.display = 'none'; // Hide the play button
+            });
+            
+            video.addEventListener('ended', () => {
+              playButton.style.display = 'block'; // Show the play button again
+            });
+          </script>
+    </body>
+</html>
